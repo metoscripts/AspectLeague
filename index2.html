@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>ASPECT LEAGUE #TR</title>
+</head>
+
+<body style="background-image: url(/AspectArkaPlan.png);" class="bg-black">
+
+    <div class="flex w-full p-6">
+        <div
+            class="fixed left-6 right-6 flex justify-between items-center bg-[#070707] border border-[#262626] p-4 rounded-xl">
+            <div>
+                <a href=""
+                    class="flex justify-center border border-[#262626] text-white font-bold p-2 w-32 rounded-md hover:bg-[#262626] duration-300">ASPECT
+                    #TR</a>
+            </div>
+            <div class="hidden md:flex gap-12">
+                <a href="index.html" class="text-[#9d9d9d] hover:text-white duration-500">AnaSayfa</a>
+                <a href="" class="text-[#9d9d9d] hover:text-white duration-500">Puan Durumu</a>
+                <a href="" class="text-[#9d9d9d] hover:text-white duration-500">Partner</a>
+            </div>
+            <input type="checkbox" id="checkbox" class="hidden peer">
+            <div
+                class="hidden peer-checked:flex fixed text-center flex-col bg-[#070707] border border-[#262626] p-6 rounded-xl gap-12 mt-[400px] right-6 md:hidden">
+                <a href="index.html" class="text-[#9d9d9d] hover:text-white duration-500">AnaSayfa</a>
+                <a href="" class="text-[#9d9d9d] hover:text-white duration-500">Puan Durumu</a>
+                <a href="" class="text-[#9d9d9d] hover:text-white duration-500">Partner</a>
+                <div>
+                    <a href="https://discord.gg/aspectleague"
+                        class="flex justify-center border border-[#262626] text-white p-2 w-32 rounded-md hover:bg-[#262626] duration-300">Discord'a
+                        Katıl</a>
+                </div>
+            </div>
+            <div>
+                <a href="https://discord.gg/aspectleague"
+                    class="hidden md:flex justify-center border border-[#262626] text-white p-2 w-32 rounded-md hover:bg-[#262626] duration-300">Discord'a
+                    Katıl</a>
+            </div>
+            <label for="checkbox" class="text-white text-2xl cursor-pointer md:hidden"><i
+                    class="fa-solid fa-bars"></i></label>
+        </div>
+    </div>
+
+    <div class="text-center mt-32">
+        <h1 class="text-white text-2xl md:text-white md:text-4xl font-bold mb-12">ASPECT LEAGUE GOL KRALLIĞI</h1>
+        <hr class="text-white m-auto w-96 mb-12">
+        <div class="flex flex-col justify-center items-center gap-12">
+
+            <div
+                class="border border-[#262626] w-96 h-17 cursor-pointer rounded-full hover:bg-[#262626] duration-300 hover:-translate-y-2">
+                <div class="flex justify-between items-center p-5">
+                    <div>
+                        <h1 class="text-white text-xl">1. Meku</h1>
+                    </div>
+                    <div>
+                        <h1 class="text-white text-xl">7 GOL</h1>
+                    </div>
+                </div>
+            </div>
+
+            <div
+                class="border border-[#262626] w-96 h-17 cursor-pointer rounded-full hover:bg-[#262626] duration-300 hover:-translate-y-2">
+                <div class="flex justify-between items-center p-5">
+                    <div>
+                        <h1 class="text-white text-xl">2. Shu</h1>
+                    </div>
+                    <div>
+                        <h1 class="text-white text-xl">6 GOL</h1>
+                    </div>
+                </div>
+            </div>
+
+            <div
+                class="border border-[#262626] w-96 h-17 cursor-pointer rounded-full hover:bg-[#262626] duration-300 hover:-translate-y-2">
+                <div class="flex justify-between items-center p-5">
+                    <div>
+                        <h1 class="text-white text-xl">3. Wiozen</h1>
+                    </div>
+                    <div>
+                        <h1 class="text-white text-xl">5 GOL</h1>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <hr class="mt-0">
+
+    <script>
+
+        const hızX = 3;
+        const hızY = 3;
+
+        document.addEventListener("mousemove", function (e) {
+            const mouseX = e.clientX;
+            const mouseY = e.clientY;
+            const width = window.innerWidth;
+            const height = window.innerHeight;
+
+            const farkX = mouseX - width / 2;
+            const farkY = mouseY - height / 2;
+
+            const posX = 50 + (farkX / width) * hızX;
+            const posY = 50 + (farkY / height) * hızY;
+
+            document.body.style.backgroundPosition = `${posX}% ${posY}%`;
+        });
+
+    </script>
+
+</body>
+
+</html>
