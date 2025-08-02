@@ -11,7 +11,7 @@
     <title>ASPECT LEAGUE</title>
 </head>
 
-<body style="background-image: url(https://raw.githubusercontent.com/metoscripts/AspectLeague/refs/heads/main/AspectArkaPlan.png);" class="bg-black">
+<body style="background-image: url(/AspectArkaPlan.png);" class="bg-black">
 
     <div class="flex w-full p-6">
         <div
@@ -80,7 +80,7 @@
                 <div class="flex justify-between flex-wrap">
                     <div>
                         <h1 id="box5" class="text-white text-2xl font-bold mb-3">GOL KRALLIGI</h1>
-                        <h1 class="text-white mb-4">Aspect League #TR'De Olan <br> Gol Krallığı Zirvesine
+                        <h1 id="box5info" class="text-white mb-4">Aspect League #TR'De Olan <br> Gol Krallığı Zirvesine
                             Bakmak İçin
                             <br>
                             Aşağıdaki Buttona Tıklayabilirsiniz
@@ -101,7 +101,8 @@
                 <div class="flex justify-between flex-wrap">
                     <div>
                         <h1 id="box6" class="text-white text-2xl font-bold mb-3">ASİST KRALLIGI</h1>
-                        <h1 class="text-white mb-4">Aspect League #TR'De Olan <br> Asist Krallığı Zirvesine
+                        <h1 id="box6info" class="text-white mb-4">Aspect League #TR'De Olan <br> Asist Krallığı
+                            Zirvesine
                             Bakmak İçin
                             <br>
                             Aşağıdaki Buttona Tıklayabilirsiniz
@@ -122,7 +123,8 @@
                 <div class="flex justify-between flex-wrap">
                     <div>
                         <h1 id="box7" class="text-white text-2xl font-bold mb-3">SAVE KRALLIGI</h1>
-                        <h1 class="text-white mb-4">Aspect League #TR'De Olan <br> Save Krallığı Zirvesine Bakmak İçin
+                        <h1 id="box7info" class="text-white mb-4">Aspect League #TR'De Olan <br> Save Krallığı Zirvesine
+                            Bakmak İçin
                             <br>
                             Aşağıdaki Buttona Tıklayabilirsiniz
                         </h1>
@@ -142,7 +144,8 @@
                 <div class="flex justify-between flex-wrap">
                     <div>
                         <h1 id="box8" class="text-white text-2xl font-bold mb-3">HAFTANIN TAKIMI</h1>
-                        <h1 class="text-white mb-4">Aspect League #TR'De Olan <br> Haftanın Takımı Zirvesine Bakmak İçin
+                        <h1 id="box8info" class="text-white mb-4">Aspect League #TR'De Olan <br> Haftanın Takımı
+                            Zirvesine Bakmak İçin
                             <br>
                             Aşağıdaki Buttona Tıklayabilirsiniz
                         </h1>
@@ -162,7 +165,8 @@
                 <div class="flex justify-between flex-wrap">
                     <div>
                         <h1 id="box9" class="text-white text-2xl font-bold mb-3">ŞAMPİYON TAKIM</h1>
-                        <h1 class="text-white mb-4">Aspect League #TR'De Olan <br> Şampiyon Takım Zirvesine Bakmak İçin
+                        <h1 id="box9info" class="text-white mb-4">Aspect League #TR'De Olan <br> Şampiyon Takım
+                            Zirvesine Bakmak İçin
                             <br>
                             Aşağıdaki Buttona Tıklayabilirsiniz
                         </h1>
@@ -182,7 +186,8 @@
                 <div class="flex justify-between flex-wrap">
                     <div>
                         <h1 id="box10" class="text-white text-2xl font-bold mb-3">BALLON DOR</h1>
-                        <h1 class="text-white mb-4">Aspect League #TR'De Olan <br> Ballon Dor Zirvesine Bakmak İçin
+                        <h1 id="box10info" class="text-white mb-4">Aspect League #TR'De Olan <br> Ballon Dor Zirvesine
+                            Bakmak İçin
                             <br>
                             Aşağıdaki Buttona Tıklayabilirsiniz
                         </h1>
@@ -279,22 +284,28 @@
         const main1 = document.getElementById("box4");
 
         const GoalKingdom = document.getElementById("box5");
-
+        const Goalİnfo = document.getElementById("box5info")
         const GoalLink = document.getElementById("box5btn");
 
+
         const AsistKingdom = document.getElementById("box6");
+        const Asistİnfo = document.getElementById("box6info")
         const AsistLink = document.getElementById("box6btn");
 
         const SaveKingdom = document.getElementById("box7");
+        const Saveİnfo = document.getElementById("box7info")
         const SaveLink = document.getElementById("box7btn");
 
         const TeamOfTheWeek = document.getElementById("box8");
+        const TeamOfTheWeekİnfo = document.getElementById("box8info")
         const TeamOfTheWeekLink = document.getElementById("box8btn");
 
         const Champion = document.getElementById("box9");
+        const Championİnfo = document.getElementById("box9info")
         const ChampionLink = document.getElementById("box9btn");
 
         const BallonDor = document.getElementById("box10");
+        const BallonDorİnfo = document.getElementById("box10info")
         const BallonLink = document.getElementById("box10btn");
 
         const faq = document.getElementById("sss")
@@ -325,21 +336,27 @@
                 main1.textContent = "Is this the league of your dreams? Here is the only league that comes to mind: Aspect League";
 
                 GoalKingdom.textContent = "GOAL KİNGDOM";
+                Goalİnfo.innerHTML = "To see the Top Scorers <br> in the Aspect League #TR, <br> click the button below.";
                 GoalLink.textContent = "Go To Goal Kingdom";
 
                 AsistKingdom.textContent = "ASİST KİNGDOM";
+                Asistİnfo.innerHTML = "To See the Top Assist <br> Kingdom in Aspect League #TR <br> Click the Button Below";
                 AsistLink.textContent = "Go To Assist Kingdom";
 
                 SaveKingdom.textContent = "SAVE KİNGDOM";
+                Saveİnfo.innerHTML = "To watch the Save Kingdom Summit <br> in Aspect League #TR, <br> click the button below.";
                 SaveLink.textContent = "Go To Save Kingdom";
 
                 TeamOfTheWeek.textContent = "TEAM OF THE WEEK";
+                TeamOfTheWeekİnfo.innerHTML = "To see the Aspect League #TR <br> Team of the Week Topic, <br> click the button below.";
                 TeamOfTheWeekLink.textContent = "Go To Team Of The Week";
 
                 Champion.textContent = "CHAMPİON TEAM";
+                Championİnfo.innerHTML = "To view the Aspect League #TR <br> Champion Team Summit, <br> click the button below.";
                 ChampionLink.textContent = "Go To Champion Team";
 
                 BallonDor.textContent = "BALLON DOR";
+                BallonDorİnfo.innerHTML = "To watch the Ballon Dor <br> Summit in Aspect League #TR, <br> click the button below.";
                 BallonLink.textContent = "Go To Ballon Dor";
 
                 faq.textContent = "Aspect League FAQ";
@@ -369,21 +386,27 @@
                 main1.textContent = "Hayalindeki Ligmi İşte Akla Gelen Tek Lig: Aspect League";
 
                 GoalKingdom.textContent = "GOL KRALLIĞI";
+                Goalİnfo.innerHTML = "Aspect League #TR'De Olan <br> Gol Krallığı Zirvesine Bakmak İçin <br> Aşağıdaki Buttona Tıklayabilirsiniz";
                 GoalLink.textContent = "Gol Krallığına Git";
 
                 AsistKingdom.textContent = "ASİST KRALLIĞI";
+                Asistİnfo.innerHTML = "Aspect League #TR'De Olan <br> Asist Krallığı Zirvesine Bakmak İçin <br> Aşağıdaki Buttona Tıklayabilirsiniz";
                 AsistLink.textContent = "Asist Krallığına Git";
 
                 SaveKingdom.textContent = "SAVE KRALLIĞI";
+                Saveİnfo.innerHTML = "Aspect League #TR'De Olan <br> Save Krallığı Zirvesine Bakmak İçin <br> Aşağıdaki Buttona Tıklayabilirsiniz";
                 SaveLink.textContent = "Save Krallığına Git";
 
                 TeamOfTheWeek.textContent = "HAFTANIN TAKIMI";
+                TeamOfTheWeekİnfo.innerHTML = "Aspect League #TR'De Olan <br> Haftanın Takımı Zirvesine Bakmak İçin <br> Aşağıdaki Buttona Tıklayabilirsiniz";
                 TeamOfTheWeekLink.textContent = "Haftanın Takımı Git";
 
                 Champion.textContent = "ŞAMPİYON TAKIM";
+                Saveİnfo.innerHTML = "Aspect League #TR'De Olan <br> Şampiyon Takım Zirvesine Bakmak İçin <br> Aşağıdaki Buttona Tıklayabilirsiniz";
                 ChampionLink.textContent = "Şampiyon Takıma Git";
 
                 BallonDor.textContent = "BALLON DOR";
+                BallonDorİnfo.innerHTML = "Aspect League #TR'De <br> Olan Ballon Dor Zirvesine Bakmak İçin <br> Aşağıdaki Buttona Tıklayabilirsiniz"
                 BallonLink.textContent = "Ballon Dor'a Git";
 
                 faq.textContent = "Aspect League SSS";
@@ -417,21 +440,27 @@
                 main1.textContent = "Is this the league of your dreams? Here is the only league that comes to mind: Aspect League";
 
                 GoalKingdom.textContent = "GOAL KİNGDOM";
+                Goalİnfo.innerHTML = "To see the Top Scorers <br> in the Aspect League #TR, <br> click the button below.";
                 GoalLink.textContent = "Go To Goal Kingdom";
 
                 AsistKingdom.textContent = "ASİST KİNGDOM";
+                Asistİnfo.innerHTML = "To See the Top Assist <br> Kingdom in Aspect League #TR <br> Click the Button Below";
                 AsistLink.textContent = "Go To Assist Kingdom";
 
                 SaveKingdom.textContent = "SAVE KİNGDOM";
+                Saveİnfo.innerHTML = "To watch the Save Kingdom Summit <br> in Aspect League #TR, <br> click the button below.";
                 SaveLink.textContent = "Go To Save Kingdom";
 
                 TeamOfTheWeek.textContent = "TEAM OF THE WEEK";
+                TeamOfTheWeekİnfo.innerHTML = "To see the Aspect League #TR <br> Team of the Week Topic, <br> click the button below.";
                 TeamOfTheWeekLink.textContent = "Go To Team Of The Week";
 
                 Champion.textContent = "CHAMPİON TEAM";
+                Championİnfo.innerHTML = "To view the Aspect League #TR <br> Champion Team Summit, <br> click the button below.";
                 ChampionLink.textContent = "Go To Champion Team";
 
                 BallonDor.textContent = "BALLON DOR";
+                BallonDorİnfo.innerHTML = "To watch the Ballon Dor <br> Summit in Aspect League #TR, <br> click the button below.";
                 BallonLink.textContent = "Go To Ballon Dor";
 
                 faq.textContent = "Aspect League FAQ";
@@ -461,21 +490,27 @@
                 main1.textContent = "Hayalindeki Ligmi İşte Akla Gelen Tek Lig: Aspect League";
 
                 GoalKingdom.textContent = "GOL KRALLIĞI";
+                Goalİnfo.innerHTML = "Aspect League #TR'De Olan <br> Gol Krallığı Zirvesine Bakmak İçin <br> Aşağıdaki Buttona Tıklayabilirsiniz";
                 GoalLink.textContent = "Gol Krallığına Git";
 
                 AsistKingdom.textContent = "ASİST KRALLIĞI";
+                Asistİnfo.innerHTML = "Aspect League #TR'De Olan <br> Asist Krallığı Zirvesine Bakmak İçin <br> Aşağıdaki Buttona Tıklayabilirsiniz";
                 AsistLink.textContent = "Asist Krallığına Git";
 
                 SaveKingdom.textContent = "SAVE KRALLIĞI";
+                Saveİnfo.innerHTML = "Aspect League #TR'De Olan <br> Save Krallığı Zirvesine Bakmak İçin <br> Aşağıdaki Buttona Tıklayabilirsiniz";
                 SaveLink.textContent = "Save Krallığına Git";
 
                 TeamOfTheWeek.textContent = "HAFTANIN TAKIMI";
+                TeamOfTheWeekİnfo.innerHTML = "Aspect League #TR'De Olan <br> Haftanın Takımı Zirvesine Bakmak İçin <br> Aşağıdaki Buttona Tıklayabilirsiniz";
                 TeamOfTheWeekLink.textContent = "Haftanın Takımı Git";
 
                 Champion.textContent = "ŞAMPİYON TAKIM";
+                Saveİnfo.innerHTML = "Aspect League #TR'De Olan <br> Şampiyon Takım Zirvesine Bakmak İçin <br> Aşağıdaki Buttona Tıklayabilirsiniz";
                 ChampionLink.textContent = "Şampiyon Takıma Git";
 
                 BallonDor.textContent = "BALLON DOR";
+                BallonDorİnfo.innerHTML = "Aspect League #TR'De <br> Olan Ballon Dor Zirvesine Bakmak İçin <br> Aşağıdaki Buttona Tıklayabilirsiniz"
                 BallonLink.textContent = "Ballon Dor'a Git";
 
                 faq.textContent = "Aspect League SSS";
@@ -515,4 +550,3 @@
 </body>
 
 </html>
-
